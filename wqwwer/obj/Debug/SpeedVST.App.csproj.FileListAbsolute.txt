@@ -1,0 +1,7 @@
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer\bin\wqwwer.dll.config
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer\bin\wqwwer.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer\bin\wqwwer.pdb
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer\obj\Debug\SpeedVST.App.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer\obj\Debug\wqwwer.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer\obj\Debug\wqwwer.pdb
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer\bin\Microsoft.Web.Infrastructure.dll

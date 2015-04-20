@@ -1,0 +1,17 @@
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\wqwwer.Tests.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\wqwwer.Tests.pdb
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\wqwwer.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\wqwwer.pdb
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\obj\Debug\SpeedVST.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\obj\Debug\wqwwer.Tests.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\obj\Debug\wqwwer.Tests.pdb

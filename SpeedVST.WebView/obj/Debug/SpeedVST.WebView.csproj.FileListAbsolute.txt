@@ -1,0 +1,6 @@
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\SpeedVST.WebView\bin\SpeedVST.WebView.dll.config
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\SpeedVST.WebView\bin\SpeedVST.WebView.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\SpeedVST.WebView\bin\SpeedVST.WebView.pdb
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\SpeedVST.WebView\obj\Debug\SpeedVST.WebView.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\SpeedVST.WebView\obj\Debug\SpeedVST.WebView.dll
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\SpeedVST.WebView\obj\Debug\SpeedVST.WebView.pdb

@@ -1,0 +1,24 @@
+﻿@model SpeedVST.App.Models.PluginListViewer
+
+<h2 class="text-center">Plugin Base</h2>
+
+<table class="table-light mt3">
+    <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Date</th>
+        <th>Category</th>
+        <th></th>
+    </tr>
+    @foreach (var s in Model.PluginBase)
+    {
+        <tr>
+            <td>@s.ID</td>
+            <td>@s.Title</td>
+            <td>@s.Author</td>
+            <td>@s.ReleaseDate.ToShortDateString() @s.ReleaseDate.ToShortTimeString()</td>
+            <td>@s.Cat</td>
+            <td>@s.Price</td>
+        </tr>
+    }
+</table>

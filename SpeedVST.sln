@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedVST.App", "wqwwer\SpeedVST.App.csproj", "{BC46935C-344F-4887-931C-0288FD4464F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedVST.Tests", "wqwwer.Tests\SpeedVST.Tests.csproj", "{3E84B77A-1F10-4F07-874E-DD791371C464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedVST.GUI", "SpeedVST.GUI\SpeedVST.GUI.csproj", "{182E39BF-F1B1-43B9-A5DD-70CF74D9205E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC46935C-344F-4887-931C-0288FD4464F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC46935C-344F-4887-931C-0288FD4464F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC46935C-344F-4887-931C-0288FD4464F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC46935C-344F-4887-931C-0288FD4464F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E84B77A-1F10-4F07-874E-DD791371C464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E84B77A-1F10-4F07-874E-DD791371C464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E84B77A-1F10-4F07-874E-DD791371C464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E84B77A-1F10-4F07-874E-DD791371C464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182E39BF-F1B1-43B9-A5DD-70CF74D9205E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182E39BF-F1B1-43B9-A5DD-70CF74D9205E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182E39BF-F1B1-43B9-A5DD-70CF74D9205E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182E39BF-F1B1-43B9-A5DD-70CF74D9205E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -4,19 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace SpeedVST.GUI.Controllers.Base
+namespace SpeedVST.GUI.Controllers
 {
-    public class ListController : Controller
+    public class HomeController : Controller
     {
-       [HttpGet]
+        // GET: Main
         public ActionResult Index()
         {
             return View();
         }
-        [HttpPost]
-       public ActionResult Index()
-       {
-           return View();
-       }
     }
 }

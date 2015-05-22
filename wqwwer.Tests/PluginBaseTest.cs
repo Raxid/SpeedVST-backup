@@ -4,6 +4,7 @@ using SpeedVST.App.Entities;
 using SpeedVST.App;
 using SpeedVST.App.Models;
 using SpeedVST.Mock;
+using System.Linq;
 
 namespace SpeedVST.Tests
 {
@@ -16,7 +17,7 @@ namespace SpeedVST.Tests
             var pluginService = new PluginService();
             var expectedList = new TableExample().PluginBase;
 
-            var resultList = pluginService.PluginBase;
+            var resultList = pluginService.PluginBaseList;
 
             Assert.AreEqual(expectedList[0], resultList[0]);
             Assert.AreEqual(expectedList[1], resultList[1]);
@@ -49,14 +50,20 @@ namespace SpeedVST.Tests
         [TestMethod]
         public void DeleteSelectedPlugin()
         {
-            //pluginService.DeletePlugin(id)
+            var pluginService = new PluginService();
+            pluginService.DeleteSelectedPlugin(0);
+            var resultList = pluginService.PluginBaseList.F;
+            Assert.AreEqual(, resultList);
         }
 
         [TestMethod]
-        public void AddNewPlugin()
+         public void AddNewPlugin()
         {
-            var NewPlugin = new PluginService();
-            //pluginService.AddPlugin(new pluginbase);
+            var pluginService = new PluginService();
+            var pluginToAdd = new PluginBase("Gjh", new DateTime(2012, 11, 9, 15, 30, 0), "WEREDA", "Pads", 32.5M);
+            pluginService.AddPlugin(pluginToAdd);
+            var resultPlugin = pluginService.PluginBaseList.Last();
+            Assert.AreEqual(pluginToAdd, resultPlugin);
+        }
         }
     }
-}

@@ -70,7 +70,6 @@
     <Compile Include="Mock\TableExample.cs" />
     <Compile Include="Models\Pagination.cs" />
     <Compile Include="Models\PluginListViewer.cs" />
-    <Compile Include="newPlugin.cs" />
     <Compile Include="PluginService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

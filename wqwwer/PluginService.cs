@@ -5,32 +5,41 @@ using System.Text;
 using SpeedVST.App.Models;
 using SpeedVST.Mock;
 using SpeedVST.App.Entities;
+using SpeedVST;
+
 namespace SpeedVST.App
 {
     public class PluginService
     {
-        public IList<PluginBase> PluginBase { get; set; }
+        public IList<PluginBase> PluginBaseList { get; set; }
 
         public PluginService()
         {
-            PluginBase = new TableExample().PluginBase;
+            PluginBaseList = new TableExample().PluginBase;
         }
 
         public PluginBase FindPlugin(int pluginID)
         {
-            return PluginBase.ElementAt(pluginID);
+            return PluginBaseList.ElementAt(pluginID);
         }
 
         public void EditPlugin(PluginBase editedPlugin)
         {
-            PluginBase[editedPlugin.ID] = editedPlugin;
+            PluginBaseList[editedPlugin.ID] = editedPlugin;
         }
 
-        public PluginBase AddPlugin(PluginBase newPlugin)
+        public void AddPlugin(PluginBase newPlugin)
         {
-            var NewID;
-               return PluginBase.Insert(0,newPlugin);
+            newPlugin.ID = PluginBaseList.Count();
+            PluginBaseList.Add(newPlugin);
+        }
 
+
+
+        public void DeleteSelectedPlugin(int IdOfDeletingPlugin)
+        {
+           var PluginToDelete = FindPlugin(IdOfDeletingPlugin);
+           PluginBaseList.Remove(PluginToDelete);
         }
     }
 }

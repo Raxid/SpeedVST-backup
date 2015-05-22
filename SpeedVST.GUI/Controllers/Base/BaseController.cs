@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using SpeedVST.Mock;
 using SpeedVST.App.Models;
 using SpeedVST.App;
-
+using SpeedVST.App.Entities;
 namespace SpeedVST.GUI.Controllers
 {
     public class BaseController : Controller
@@ -20,7 +20,7 @@ namespace SpeedVST.GUI.Controllers
         
         public ActionResult List()
         {
-            return View(_pluginService.GetList());
+            return View(_pluginService.PluginBaseList);
         }
     }
 }

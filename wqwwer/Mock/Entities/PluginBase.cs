@@ -18,6 +18,14 @@ namespace SpeedVST.App.Entities
         {
             ID = id;
         }
+        public PluginBase(string title, DateTime releasedate, string author, string cat, decimal price)
+        {
+            Title = title;
+            ReleaseDate = releasedate;
+            Author = author;
+            Cat = cat;
+            Price = price;
+        }
         public PluginBase(int id, string title, DateTime releasedate, string author, string cat, decimal price)
          {
         ID = id;

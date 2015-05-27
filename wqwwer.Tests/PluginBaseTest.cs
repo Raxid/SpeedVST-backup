@@ -19,8 +19,8 @@ namespace SpeedVST.Tests
 
             var resultList = pluginService.PluginBaseList;
 
-            Assert.AreEqual(expectedList[0], resultList[0]);
-            Assert.AreEqual(expectedList[1], resultList[1]);
+            Assert.AreEqual(expectedList[0], resultList.PluginBase[0]);
+            Assert.AreEqual(expectedList[1], resultList.PluginBase[1]);
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace SpeedVST.Tests
         {
             var pluginService = new PluginService();
             var expectedPlugin = new PluginBase(1, "Cracker", new DateTime(2015, 11, 9, 15, 30, 0), "Garisk", "Flangers", 1.1M);
-            
+
             var pluginFound = pluginService.FindPlugin(1);
 
             Assert.AreEqual(expectedPlugin, pluginFound);
@@ -51,19 +51,22 @@ namespace SpeedVST.Tests
         public void DeleteSelectedPlugin()
         {
             var pluginService = new PluginService();
-            pluginService.DeleteSelectedPlugin(0);
-            var resultList = pluginService.PluginBaseList.F;
-            Assert.AreEqual(, resultList);
+            var pluginToDelete = pluginService.FindPlugin(1);
+
+            pluginService.DeleteSelectedPlugin(1);
+
+            Assert.IsFalse(pluginService.PluginBaseList.PluginBase.Contains(pluginToDelete));
         }
 
         [TestMethod]
-         public void AddNewPlugin()
+        public void AddNewPlugin()
         {
             var pluginService = new PluginService();
             var pluginToAdd = new PluginBase("Gjh", new DateTime(2012, 11, 9, 15, 30, 0), "WEREDA", "Pads", 32.5M);
             pluginService.AddPlugin(pluginToAdd);
-            var resultPlugin = pluginService.PluginBaseList.Last();
+            var resultPlugin = pluginService.PluginBaseList.PluginBase.Last();
             Assert.AreEqual(pluginToAdd, resultPlugin);
         }
-        }
     }
+}
+    

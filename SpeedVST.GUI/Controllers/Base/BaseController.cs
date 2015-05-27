@@ -7,6 +7,7 @@ using SpeedVST.Mock;
 using SpeedVST.App.Models;
 using SpeedVST.App;
 using SpeedVST.App.Entities;
+using System.IO;
 namespace SpeedVST.GUI.Controllers
 {
     public class BaseController : Controller
@@ -17,10 +18,15 @@ namespace SpeedVST.GUI.Controllers
         {
             _pluginService = new PluginService();
         }
-        
+
         public ActionResult List()
         {
             return View(_pluginService.PluginBaseList);
+        }
+        [HttpGet]
+        public ActionResult AddNewPlugin()
+        {
+            return View();
         }
     }
 }

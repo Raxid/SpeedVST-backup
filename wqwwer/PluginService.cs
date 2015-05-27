@@ -11,35 +11,35 @@ namespace SpeedVST.App
 {
     public class PluginService
     {
-        public IList<PluginBase> PluginBaseList { get; set; }
+        public PluginListViewer PluginBaseList { get; set; }
 
         public PluginService()
         {
-            PluginBaseList = new TableExample().PluginBase;
+            PluginBaseList = new PluginListViewer(new TableExample().PluginBase);
         }
 
         public PluginBase FindPlugin(int pluginID)
         {
-            return PluginBaseList.ElementAt(pluginID);
+            return PluginBaseList.PluginBase.ElementAt(pluginID);
         }
 
         public void EditPlugin(PluginBase editedPlugin)
         {
-            PluginBaseList[editedPlugin.ID] = editedPlugin;
+            PluginBaseList.PluginBase[editedPlugin.ID] = editedPlugin;
         }
 
         public void AddPlugin(PluginBase newPlugin)
         {
-            newPlugin.ID = PluginBaseList.Count();
-            PluginBaseList.Add(newPlugin);
+            newPlugin.ID = PluginBaseList.PluginBase.Count();
+            PluginBaseList.PluginBase.Add(newPlugin);
         }
 
 
 
         public void DeleteSelectedPlugin(int IdOfDeletingPlugin)
         {
-           var PluginToDelete = FindPlugin(IdOfDeletingPlugin);
-           PluginBaseList.Remove(PluginToDelete);
+           var pluginToDelete = FindPlugin(IdOfDeletingPlugin);
+           PluginBaseList.PluginBase.Remove(pluginToDelete);
         }
     }
 }

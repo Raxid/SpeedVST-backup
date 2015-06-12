@@ -23,10 +23,21 @@ namespace SpeedVST.GUI.Controllers
         {
             return View(_pluginService.PluginBaseList);
         }
+        [HttpPost]
+        public ActionResult AddNewPlugin(PluginBase newPluginBase)
+        {
+            //zapisujemy najlepiej za pomocą PluginService.Create(newPluginbase)
+            //na razie mozemy zapisać do naszej listy w pamięci
+            //+co zwracamy? 
+            //1) widok nowo stworzonego plugina
+            //2) liste wszystkich pluginow
+            return View();
+        }
         [HttpGet]
         public ActionResult AddNewPlugin()
         {
             return View();
         }
+
     }
 }

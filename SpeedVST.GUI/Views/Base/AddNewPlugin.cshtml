@@ -1,9 +1,52 @@
 ﻿@model SpeedVST.App.Entities.PluginBase
 
 @{
-    ViewBag.Title = "AddPlugin";
+    ViewBag.Title = "Add Plugin";
 }
-
+@using (Html.BeginForm("AddNewPlugin", "BaseController")) { 
 <h2>AddPlugin</h2>
-<label>Name</label>
-<input form="text">
+<hr size="15" />
+<div class="form-group">
+    @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Author, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Author, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Author, "", new { @class = "text-danger" })
+    </div>
+</div>
+<br />
+<div class="form-group">
+    @Html.LabelFor(model => model.Cat, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Cat, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Cat, "", new { @class = "text-danger" })
+    </div>
+</div>
+<br />
+<div class="form-group">
+    @Html.LabelFor(model => model.ReleaseDate, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.ReleaseDate, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.ReleaseDate, "", new { @class = "text-danger" })
+    </div>
+</div>
+<div>
+    <br />
+    <label>Free Download</label>
+    <input type="checkbox">
+</div>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <button type="submit" class="button-blue">Create</button>
+    </div>
+</div>
+}
+    <div>
+        @Html.ActionLink("Back to List", "List")
+    </div>

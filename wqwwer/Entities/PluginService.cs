@@ -41,5 +41,10 @@ namespace SpeedVST.App
            var pluginToDelete = FindPlugin(IdOfDeletingPlugin);
            PluginBaseList.PluginBase.Remove(pluginToDelete);
         }
+
+        public static PluginService AddPlugin()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

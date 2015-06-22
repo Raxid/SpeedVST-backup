@@ -5,10 +5,10 @@ C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\bin\D
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\obj\Debug\SpeedVST.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\obj\Debug\wqwwer.Tests.dll
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST\wqwwer.Tests\obj\Debug\wqwwer.Tests.pdb
-C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\obj\Debug\SpeedVST.Tests.csprojResolveAssemblyReference.cache
-C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\obj\Debug\wqwwer.Tests.dll
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\bin\Debug\wqwwer.Tests.dll
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\bin\Debug\wqwwer.Tests.pdb
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\bin\Debug\wqwwer.dll
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\bin\Debug\wqwwer.pdb
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\obj\Debug\SpeedVST.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\obj\Debug\wqwwer.Tests.dll
 C:\Users\Radek\Documents\Visual Studio 2013\Projects\SpeedVST-backup\wqwwer.Tests\obj\Debug\wqwwer.Tests.pdb

@@ -68,9 +68,9 @@
   <ItemGroup>
     <Compile Include="Entities\PluginBase.cs" />
     <Compile Include="Mock\TableExample.cs" />
-    <Compile Include="Models\Pagination.cs" />
+    <Compile Include="Pagination.cs" />
     <Compile Include="Models\PluginListViewer.cs" />
-    <Compile Include="PluginService.cs" />
+    <Compile Include="Entities\PluginService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

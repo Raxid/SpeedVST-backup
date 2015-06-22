@@ -13,12 +13,12 @@ namespace SpeedVST.GUI.Controllers
 {
     public class PluginBasesController : Controller
     {
-        private SpeedVSTGUIContext db = new SpeedVSTGUIContext();
+        private PluginDataBase db = new PluginDataBase();
 
         // GET: PluginBases
         public ActionResult Index()
         {
-            return View(db.PluginBases.ToList());
+            return View(db.PluginData.ToList());
         }
 
         // GET: PluginBases/Details/5
@@ -28,7 +28,7 @@ namespace SpeedVST.GUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PluginBase pluginBase = db.PluginBases.Find(id);
+            PluginBase pluginBase = db.PluginData.Find(id);
             if (pluginBase == null)
             {
                 return HttpNotFound();
@@ -51,7 +51,7 @@ namespace SpeedVST.GUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.PluginBases.Add(pluginBase);
+                db.PluginData.Add(pluginBase);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -66,7 +66,7 @@ namespace SpeedVST.GUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PluginBase pluginBase = db.PluginBases.Find(id);
+            PluginBase pluginBase = db.PluginData.Find(id);
             if (pluginBase == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace SpeedVST.GUI.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PluginBase pluginBase = db.PluginBases.Find(id);
+            PluginBase pluginBase = db.PluginData.Find(id);
             if (pluginBase == null)
             {
                 return HttpNotFound();
@@ -110,8 +110,8 @@ namespace SpeedVST.GUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            PluginBase pluginBase = db.PluginBases.Find(id);
-            db.PluginBases.Remove(pluginBase);
+            PluginBase pluginBase = db.PluginData.Find(id);
+            db.PluginData.Remove(pluginBase);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
